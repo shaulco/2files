@@ -150,9 +150,9 @@ public class CardTypesGrid_jsp extends HttpJspBase {
     }
   }
   
-  String getParam(javax.servlet.http.HttpServletRequest req, String paramName) {
-    String param = req.getParameter(paramName);
-    if ( param == null || param.equals("") ) return "";
+// String getParam(javax.servlet.http.HttpServletRequest req, String paramName) {
+//    String param = req.getParameter(paramName);
+//    if ( param == null || param.equals("") ) return "";
     param = replace(param,"&amp;","&");
     param = replace(param,"&lt;","<");
     param = replace(param,"&gt;",">");
